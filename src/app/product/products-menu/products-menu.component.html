@@ -1,0 +1,12 @@
+<!--<ul class="nav nav-tabs">-->
+  <!--<li *ngFor = "let categoryMenu of categorysMenu"><a [routerLink]="['/produit', categoryMenu.link]">{{categoryMenu.title}}</a></li>-->
+<!--</ul>-->
+<div class="container-fluid">
+  <div class="raw">
+    <div class="vignette" *ngFor = "let categoryMenu of categorysMenu">
+         <a [routerLink]="['/produit', categoryMenu.link]">
+             <img [src] = "categoryMenu.img">
+        </a>
+    </div>
+  </div>
+</div>

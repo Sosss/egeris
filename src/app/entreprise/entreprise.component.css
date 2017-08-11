@@ -1,0 +1,62 @@
+
+section .quality1{min-height: 175px;}
+section .quality2{min-height: 255px;}
+section .quality h2{text-align: center;font-family: 'Droid Serif', serif;color: #ec7b20;margin-bottom: 20px}
+section .quality p{text-align: justify;font-family: Raleway, serif; font-size: 16px;margin: 0}
+.entreprise {margin: 130px auto;}
+.entreprise hr{
+    border-bottom:1px solid rgba(64, 64, 64,0.2);
+    width: 50%;
+    animation:fullSize 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fullSize {
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.fadeInRight{
+    transform: translateX(-150px);
+    animation: fadeInRight 2s;
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+        -ms-opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        -ms-opacity:1;
+    }
+
+}
+.fadeInLeft{
+    transform: translateX(150px);
+    animation: fadeInLeft 2s;
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+    0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+

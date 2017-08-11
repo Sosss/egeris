@@ -1,0 +1,27 @@
+<div class="container-fluid mainNav">
+  <div class="container">
+      <div class="logoMenu">
+          <a routerLink="">
+            <svg version="1.1" id="logoEgeris" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="100%" height="100%" viewBox="0 0 131 150.25" style="enable-background:new 0 0 131 150.25;" xml:space="preserve">
+                <g>
+                    <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M97.576,65.705c8.227-3.251,16.908-3.409,24.77-1.044
+                        c-12.061-10.287-29.26-13.745-45.029-7.512c-22.735,8.986-33.882,34.705-24.895,57.441c8.987,22.737,34.704,33.884,57.441,24.896
+                        c0.616-0.243,1.221-0.505,1.819-0.772c-15.14,0.076-29.48-8.995-35.381-23.922C68.621,95.362,78.146,73.385,97.576,65.705z"/>
+                    <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M115.167,27.468C94.523-0.164,55.386-5.828,27.754,14.816
+                        C11.372,27.057,2.712,45.8,2.68,64.791c3.824-12.935,11.714-24.803,23.368-33.508c19.542-14.601,44.606-16.535,65.315-7.219
+                        c-7.325-2.934-15.321-4.547-23.694-4.547c-35.222,0-63.776,28.554-63.776,63.776c0,35.224,28.554,63.776,63.776,63.776
+                        c4.948,0,9.765-0.563,14.39-1.63c-20.614-5.249-35.86-23.934-35.86-46.181c0-26.318,21.337-47.654,47.655-47.654
+                        c14.193,0,26.929,6.212,35.659,16.057c-0.165-0.651-0.342-1.297-0.526-1.941c0.194,0.644,0.375,1.29,0.526,1.941
+                        C130.24,53.611,124.246,39.619,115.167,27.468z"/>
+                </g>
+            </svg>
+          </a>
+      </div>
+      <ul>
+          <li *ngFor = "let pageContent of pagesContent" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >
+          <a routerLink="{{pageContent.link}}">{{pageContent.title}}</a>
+        </li>
+      </ul>
+  </div>
+</div>

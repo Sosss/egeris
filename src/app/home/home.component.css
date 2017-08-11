@@ -1,0 +1,67 @@
+
+.core-home-page {
+    height: 100vh;
+    padding: 10%;
+    background-image: url(../../assets/img/home.jpg) ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -9999;
+
+}
+h1{
+    font-family: Raleway;
+    text-align: center;
+    font-size: 9em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+h2{
+    margin-top: 0;
+    font-family: Raleway;
+    text-align: center;
+}
+.core-home-page .logo{
+    text-align: center;
+    fill: #924100;
+    fill-opacity: 0.5;
+    height: 350px;
+}
+.tracking-in-contract {
+    -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,13 @@
+.vignette{
+    width: 20%;
+    float: left;
+}
+.vignette:hover{
+  transform: scale(1.1);
+}
+.vignette img {
+  width: 100%;
+}
+.container-fluid{
+  background-color: black;
+}

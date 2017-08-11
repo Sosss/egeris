@@ -1,0 +1,11 @@
+<app-products-menu></app-products-menu>
+
+<div class="wrap" [@nextCategory]="nextCategory" (@nextCategory.done)="animationDone()">
+
+  <div class="first">
+    <app-view-product  *ngIf = "categorysContent" [categorysContent] = "categorysContent" > </app-view-product>
+  </div>
+  <div class="second">
+    <app-view-product *ngIf = "nextCategorysContent" [categorysContent] = "nextCategorysContent" > </app-view-product>
+  </div>
+</div>

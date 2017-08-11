@@ -1,0 +1,13 @@
+.wrap{
+  width: 200%;
+}
+.first{
+  width: 50%;
+  float: left;
+}
+
+.second{
+  width: 50%;
+  float: left;
+
+}
